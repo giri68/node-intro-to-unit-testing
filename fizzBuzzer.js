@@ -1,7 +1,8 @@
-module.exports = function(num) {
-	if (typeof num !== 'number') {
-		throw Error('`num` must be a number');
-	}
+'use strict';
+module.exports = function fizzBuzzer(num) {
+  if (typeof num !== 'number') {
+    throw Error('`num` must be a number');
+  }
 	if (num % 15 === 0) {
 		return 'fizz-buzz';
 	}
